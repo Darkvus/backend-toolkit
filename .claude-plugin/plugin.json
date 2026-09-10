@@ -1,0 +1,11 @@
+{
+  "name": "backend-toolkit",
+  "version": "1.0.1",
+  "description": "Backend development kit: DDD agents, workflow commands, and convention skills for Python",
+  "author": {
+    "name": "Darkvus",
+    "email": "alexcaraballo96@gmail.com"
+  },
+  "keywords": ["ddd", "fastapi", "django", "python", "backend"],
+  "repository": "https://github.com/Darkvus/backend-toolkit"
+}
