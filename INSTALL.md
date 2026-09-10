@@ -7,19 +7,19 @@
 From inside Claude Code:
 
 ```
-/plugin marketplace add Darkvus/backend-dev-kit
+/plugin marketplace add Darkvus/backend-toolkit
 ```
 
 Or, if you've cloned the repo locally:
 
 ```
-/plugin marketplace add /path/to/backend-dev-kit
+/plugin marketplace add /path/to/backend-toolkit
 ```
 
 ## 2. Install the plugin
 
 ```
-/plugin install backend-toolkit@backend-dev-kit
+/plugin install backend-toolkit@backend-toolkit
 ```
 
 ## 3. Verify
@@ -36,11 +36,11 @@ You should see the `BE-ddd-planner`, `BE-fastapi-planner`, `BE-djangorestframewo
 ## Updating
 
 ```
-/plugin marketplace update backend-dev-kit
+/plugin marketplace update backend-toolkit
 ```
 
 ## Uninstalling
 
 ```
-/plugin uninstall backend-toolkit@backend-dev-kit
+/plugin uninstall backend-toolkit@backend-toolkit
 ```
