@@ -1,0 +1,14 @@
+{
+  "name": "backend-toolkit",
+  "owner": {
+    "name": "Darkvus",
+    "email": "alexcaraballo96@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "backend-toolkit",
+      "source": "./",
+      "description": "Backend development kit: DDD agents, workflow commands, and convention skills for Python"
+    }
+  ]
+}
