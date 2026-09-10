@@ -1,5 +1,5 @@
 ---
-name: BE-daas-planner
+name: daas-planner
 description: Translate Domain-Driven Design (DDD) architecture into Django-based Data as a Service (DaaS) implementation plans optimized for data exposure and querying.
 model: sonnet
 tools: Bash, Read, Write, Grep
@@ -23,10 +23,10 @@ Context: Developer needs to create a DaaS to expose user data for multiple consu
 
 user: "We need to create a DaaS to expose driver, operator, and passenger data from our users context. Multiple frontends and services need to query this data efficiently."
 
-assistant: "Let me use the BE-daas-planner agent to create a Django DaaS implementation plan that exposes these user entities with optimized read operations, filtering capabilities, and efficient serialization."
+assistant: "Let me use the daas-planner agent to create a Django DaaS implementation plan that exposes these user entities with optimized read operations, filtering capabilities, and efficient serialization."
 
 <commentary>
-The user needs a read-optimized service to expose domain data. The BE-daas-planner agent will analyze the domain and produce a DaaS-specific implementation plan focused on data exposure, querying patterns, and read optimization.
+The user needs a read-optimized service to expose domain data. The daas-planner agent will analyze the domain and produce a DaaS-specific implementation plan focused on data exposure, querying patterns, and read optimization.
 </commentary>
 </example>
 
@@ -35,7 +35,7 @@ Context: Team is implementing a DaaS for messaging data stored in MongoDB.
 
 user: "We need to expose our messaging events stored in MongoDB. Other services need to query messages and failures with various filters."
 
-assistant: "I'll use the BE-daas-planner agent to design a Django DaaS implementation plan that uses MongoEngine for document-based data exposure with appropriate ViewSets and filtering capabilities."
+assistant: "I'll use the daas-planner agent to design a Django DaaS implementation plan that uses MongoEngine for document-based data exposure with appropriate ViewSets and filtering capabilities."
 
 <commentary>
 This is a primary use case - creating a DaaS for NoSQL data exposure. The agent will create a plan for MongoDB-based DaaS with document models, ViewSets, and query patterns.
@@ -47,7 +47,7 @@ Context: Existing BaaS service needs a companion DaaS for read operations.
 
 user: "Our booking BaaS handles all write operations, but we're getting too many read queries. We need a separate DaaS to handle read-only access to booking lead data."
 
-assistant: "Let me use the BE-daas-planner agent to create a DaaS implementation plan that mirrors the necessary booking domain models in a read-optimized structure with efficient querying and caching strategies."
+assistant: "Let me use the daas-planner agent to create a DaaS implementation plan that mirrors the necessary booking domain models in a read-optimized structure with efficient querying and caching strategies."
 
 <commentary>
 CQRS pattern - separating reads from writes. The agent will design a DaaS that replicates relevant data for optimized read access while the BaaS handles writes.
@@ -57,7 +57,7 @@ CQRS pattern - separating reads from writes. The agent will design a DaaS that r
 <example>
 Context: Proactive agent monitoring detects new query requirements.
 
-assistant: "I notice that `doc/configuration/domain.md` includes entities that need to be exposed for querying. Let me use the BE-daas-planner agent to create a DaaS implementation plan that exposes these configuration entities with appropriate filtering and pagination."
+assistant: "I notice that `doc/configuration/domain.md` includes entities that need to be exposed for querying. Let me use the daas-planner agent to create a DaaS implementation plan that exposes these configuration entities with appropriate filtering and pagination."
 
 <commentary>
 Proactive detection: new entities need read-optimized exposure. The agent will analyze the domain and create a DaaS plan with ViewSets, filters, and serializers.

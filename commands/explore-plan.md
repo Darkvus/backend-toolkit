@@ -11,7 +11,7 @@ Create `.claude/sessions/context_session_{feature_name}.md` where plan is going 
 First, explore the relevant files in the repository
 
 # Team Selection (parallel execution if posible)
-Select what subagents are going to be involved in the future adont invoque them only let me know who are you going to ask advice and for what. Only select "planner" subagents. If you select BE-ddd-planner wait until this subagent finish their job to call the respective BE-fastapi-planner or BE-djangorestframework-planner.
+Select what subagents are going to be involved in the future adont invoque them only let me know who are you going to ask advice and for what. Only select "planner" subagents. If you select ddd-planner wait until this subagent finish their job to call the respective fastapi-planner or djangorestframework-planner.
 
 # Plan
 Next, think hard and write up a detailed implementation plan. Don't forget to include tests, lookbook components, and documentation. Use your judgement as to what is necessary, given the standards of this repo.
@@ -21,7 +21,7 @@ If there are things you still do not understand or questions you have for the us
 # Advice
 Use in parallel the subagents needed to get knowledge and advice over the plan to get a complete implementation.
 
-**IMPORTANT for planner subagents (BE-ddd-planner, BE-fastapi-planner, BE-djangorestframework-planner):**
+**IMPORTANT for planner subagents (ddd-planner, fastapi-planner, djangorestframework-planner):**
 - When invoking planner agents, you MUST provide the FULL context from the session file
 - Tell them to create their detailed implementation plan document (backend.md, fastapi.md, drf.md)
 - Do NOT ask for "quick validation" or "brief recommendations"

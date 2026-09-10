@@ -21,10 +21,10 @@ First, check if any agent wrote to default paths instead of microservice-specifi
 
 ```bash
 # Check for default path files that should NOT exist
-ls -la docs/features/{feature_name}/backend.md      # Should NOT exist (BE-ddd-planner default)
-ls -la docs/features/{feature_name}/drf.md          # Should NOT exist (BE-djangorestframework-planner default)
-ls -la docs/features/{feature_name}/daas.md         # Should NOT exist (BE-daas-planner default)
-ls -la docs/features/{feature_name}/fastapi.md      # Should NOT exist (BE-fastapi-planner default)
+ls -la docs/features/{feature_name}/backend.md      # Should NOT exist (ddd-planner default)
+ls -la docs/features/{feature_name}/drf.md          # Should NOT exist (djangorestframework-planner default)
+ls -la docs/features/{feature_name}/daas.md         # Should NOT exist (daas-planner default)
+ls -la docs/features/{feature_name}/fastapi.md      # Should NOT exist (fastapi-planner default)
 ```
 
 **If any default path file exists:**

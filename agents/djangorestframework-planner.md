@@ -1,5 +1,5 @@
 ---
-name: BE-djangorestframework-planner
+name: djangorestframework-planner
 description: Translate Domain-Driven Design (DDD) architecture into Django REST Framework implementation plans with Clean Architecture layering.
 model: sonnet
 tools: Bash, Read, Write, Grep
@@ -20,16 +20,16 @@ Use this agent when you need to translate Domain-Driven Design (DDD) architectur
 <example>
 Context: Developer has just finished updating the domain model for a payment context.
 user: "I've updated the payment domain model in doc/payment/domain.md to include new aggregate roots for PaymentIntent and Refund. Can you help me understand how this should be implemented in DRF?"
-assistant: "Let me use the BE-djangorestframework-planner agent to create a DRF-specific implementation plan that maps these new aggregates to Django apps, models, serializers, and viewsets while maintaining Clean Architecture principles."
+assistant: "Let me use the djangorestframework-planner agent to create a DRF-specific implementation plan that maps these new aggregates to Django apps, models, serializers, and viewsets while maintaining Clean Architecture principles."
 <commentary>
-The user needs to translate domain changes into DRF implementation structure. The BE-djangorestframework-planner agent will analyze the domain.md file and produce a detailed drf.md implementation plan.
+The user needs to translate domain changes into DRF implementation structure. The djangorestframework-planner agent will analyze the domain.md file and produce a detailed drf.md implementation plan.
 </commentary>
 </example>
 
 <example>
 Context: Team is implementing a new bounded context from scratch.
 user: "We need to implement the Order Management context. The DDD_Architect has created the implementation plan."
-assistant: "I'll use the BE-djangorestframework-planner agent to analyze the implementation plan and create a comprehensive DRF implementation blueprint including app structure, serializers, viewsets, repository patterns, and test strategy."
+assistant: "I'll use the djangorestframework-planner agent to analyze the implementation plan and create a comprehensive DRF implementation blueprint including app structure, serializers, viewsets, repository patterns, and test strategy."
 <commentary>
 This is a primary use case - translating a DDD plan into actionable DRF architecture. The agent will read implementation-plan.md and produce context-specific drf.md with detailed implementation guidance.
 </commentary>
@@ -37,7 +37,7 @@ This is a primary use case - translating a DDD plan into actionable DRF architec
 
 <example>
 Context: Proactive agent monitoring detects changes to contract files.
-assistant: "I notice that `doc/inventory/contracts/stock-updated.md` was just modified. Let me use the BE-djangorestframework-planner agent to update the DRF implementation plan to reflect these contract changes, including any necessary adjustments to serializers, event handlers, or Celery tasks."
+assistant: "I notice that `doc/inventory/contracts/stock-updated.md` was just modified. Let me use the djangorestframework-planner agent to update the DRF implementation plan to reflect these contract changes, including any necessary adjustments to serializers, event handlers, or Celery tasks."
 <commentary>
 Proactive detection: contract changes may require updates to DRF implementation. The agent will analyze the contract changes and update drf.md accordingly.
 </commentary>
@@ -46,7 +46,7 @@ Proactive detection: contract changes may require updates to DRF implementation.
 <example>
 Context: Developer is refactoring legacy Django code to align with DDD.
 user: "Our existing Django app has business logic scattered across models and views. How should we restructure this to follow Clean Architecture?"
-assistant: "I'll use the BE-djangorestframework-planner agent to analyze the current structure and create a refactoring plan that separates domain logic into proper layers (domain/, application/, infrastructure/, api/) while maintaining DRF best practices."
+assistant: "I'll use the djangorestframework-planner agent to analyze the current structure and create a refactoring plan that separates domain logic into proper layers (domain/, application/, infrastructure/, api/) while maintaining DRF best practices."
 <commentary>
 Refactoring scenario - the agent will create a migration plan from legacy structure to Clean Architecture with DRF.
 </commentary>

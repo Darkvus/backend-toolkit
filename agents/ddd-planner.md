@@ -1,5 +1,5 @@
 ---
-name: BE-ddd-planner
+name: ddd-planner
 description: Design or refactor Python backend architecture using Domain-Driven Design principles with layered architecture (domain, application, infrastructure layers).
 model: sonnet
 tools: Bash, Read, Write, Grep
@@ -13,36 +13,36 @@ Use this agent when you need to design or refactor Python backend architecture u
 <example>
 Context: User wants to add a new feature to their Python backend application.
 user: "I need to add a payment processing feature to our e-commerce platform"
-assistant: "Let me use the BE-ddd-planner agent to create a comprehensive implementation plan for the payment processing feature following DDD principles."
+assistant: "Let me use the ddd-planner agent to create a comprehensive implementation plan for the payment processing feature following DDD principles."
 <commentary>
-The user is requesting a new backend feature. Use the Task tool to launch the BE-ddd-planner agent to analyze the requirements and create a detailed implementation plan with proper layered architecture.
+The user is requesting a new backend feature. Use the Task tool to launch the ddd-planner agent to analyze the requirements and create a detailed implementation plan with proper layered architecture.
 </commentary>
 </example>
 
 <example>
 Context: User has just described requirements for a user authentication system.
 user: "We need JWT-based authentication with role-based access control and refresh tokens"
-assistant: "I'll use the BE-ddd-planner agent to design the authentication system architecture and create a detailed implementation plan."
+assistant: "I'll use the ddd-planner agent to design the authentication system architecture and create a detailed implementation plan."
 <commentary>
-This is a complex backend feature requiring careful architectural design. Launch the BE-ddd-planner agent to create a DDD-compliant implementation plan with proper separation of concerns across domain, application, and infrastructure layers.
+This is a complex backend feature requiring careful architectural design. Launch the ddd-planner agent to create a DDD-compliant implementation plan with proper separation of concerns across domain, application, and infrastructure layers.
 </commentary>
 </example>
 
 <example>
 Context: User wants to refactor existing code to follow DDD principles.
 user: "Our order management code is getting messy. Can you help reorganize it following DDD patterns?"
-assistant: "Let me engage the BE-ddd-planner agent to analyze the current structure and propose a refactoring plan that properly separates domain logic, application services, and infrastructure concerns."
+assistant: "Let me engage the ddd-planner agent to analyze the current structure and propose a refactoring plan that properly separates domain logic, application services, and infrastructure concerns."
 <commentary>
-Refactoring requires architectural analysis. Use the BE-ddd-planner agent to create a comprehensive refactoring plan that transforms the existing code into a properly layered DDD architecture.
+Refactoring requires architectural analysis. Use the ddd-planner agent to create a comprehensive refactoring plan that transforms the existing code into a properly layered DDD architecture.
 </commentary>
 </example>
 
 <example>
 Context: Proactive detection - user has just completed describing a complex business requirement.
 user: "So the inventory system needs to handle reservations, automatic restocking when levels are low, and notify suppliers when orders are placed"
-assistant: "This is a complex domain with multiple business rules and integrations. Let me use the BE-ddd-planner agent to create a detailed implementation plan that properly models these domain concepts and their relationships."
+assistant: "This is a complex domain with multiple business rules and integrations. Let me use the ddd-planner agent to create a detailed implementation plan that properly models these domain concepts and their relationships."
 <commentary>
-The complexity and business logic-heavy nature of this requirement makes it perfect for DDD. Proactively launch the BE-ddd-planner agent to ensure proper domain modeling and architectural planning.
+The complexity and business logic-heavy nature of this requirement makes it perfect for DDD. Proactively launch the ddd-planner agent to ensure proper domain modeling and architectural planning.
 </commentary>
 </example>
 

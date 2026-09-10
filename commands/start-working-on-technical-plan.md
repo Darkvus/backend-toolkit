@@ -175,15 +175,15 @@ Select which planner subagents will be involved based on each microservice's tec
 
 | Technology | Tipology | Agent |
 |------------|----------|-------|
-| Python Django | BaaS | BE-djangorestframework-planner |
-| Python Django | DaaS | BE-daas-planner |
-| Python FastAPI | Any | BE-fastapi-planner |
-| Python (general) | Any | BE-ddd-planner |
+| Python Django | BaaS | djangorestframework-planner |
+| Python Django | DaaS | daas-planner |
+| Python FastAPI | Any | fastapi-planner |
+| Python (general) | Any | ddd-planner |
 
 **Agent Execution Order:**
-1. First invoke **BE-ddd-planner** to establish domain architecture
+1. First invoke **ddd-planner** to establish domain architecture
 2. Wait for completion
-3. Then invoke framework-specific planners (**BE-fastapi-planner**, **BE-djangorestframework-planner**, **BE-daas-planner**)
+3. Then invoke framework-specific planners (**fastapi-planner**, **djangorestframework-planner**, **daas-planner**)
 
 Present the team selection to user:
 
@@ -194,13 +194,13 @@ Based on the technology and tipology of each microservice, I propose the followi
 
 | Microservice | Technology | Tipology | Agent(s) | Execution Order |
 |--------------|------------|----------|----------|-----------------|
-| {ms_1} | Django | BaaS | BE-ddd-planner → BE-djangorestframework-planner | 1 → 2 |
-| {ms_2} | Django | DaaS | BE-ddd-planner → BE-daas-planner | 1 → 3 |
-| {ms_3} | FastAPI | BaaS | BE-ddd-planner → BE-fastapi-planner | 1 → 4 |
+| {ms_1} | Django | BaaS | ddd-planner → djangorestframework-planner | 1 → 2 |
+| {ms_2} | Django | DaaS | ddd-planner → daas-planner | 1 → 3 |
+| {ms_3} | FastAPI | BaaS | ddd-planner → fastapi-planner | 1 → 4 |
 
 ### Execution Strategy
 
-- **Sequential (must wait):** BE-ddd-planner must complete before framework-specific planners
+- **Sequential (must wait):** ddd-planner must complete before framework-specific planners
 - **Parallel (can run together):** Framework-specific planners for different microservices
 
 ### Questions

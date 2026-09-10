@@ -31,7 +31,7 @@ Restart Claude Code (or start a new session) and check that the plugin's agents,
 /help
 ```
 
-You should see the `BE-ddd-planner`, `BE-fastapi-planner`, `BE-djangorestframework-planner`, `BE-daas-planner`, and `BE-planner-orchestrator` agents, along with the commands and skills listed in [README.md](README.md).
+You should see the `ddd-planner`, `fastapi-planner`, `djangorestframework-planner`, `daas-planner`, and `planner-orchestrator` agents, along with the commands and skills listed in [README.md](README.md).
 
 ## Updating
 

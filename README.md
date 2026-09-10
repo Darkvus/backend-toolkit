@@ -10,11 +10,11 @@ Planning agents that translate Domain-Driven Design architecture into stack-spec
 
 | Agent | Purpose |
 |---|---|
-| `BE-ddd-planner` | Design or refactor backend architecture using DDD layered architecture (domain, application, infrastructure). |
-| `BE-fastapi-planner` | Translate DDD architecture into FastAPI implementation plans (routers, dependency injection, repositories). |
-| `BE-djangorestframework-planner` | Translate DDD architecture into Django REST Framework implementation plans with Clean Architecture layering. |
-| `BE-daas-planner` | Translate DDD architecture into Django-based Data as a Service (DaaS) implementation plans. |
-| `BE-planner-orchestrator` | Consolidate stack-specific plans into actionable engineering tasks and release readiness reports. |
+| `ddd-planner` | Design or refactor backend architecture using DDD layered architecture (domain, application, infrastructure). |
+| `fastapi-planner` | Translate DDD architecture into FastAPI implementation plans (routers, dependency injection, repositories). |
+| `djangorestframework-planner` | Translate DDD architecture into Django REST Framework implementation plans with Clean Architecture layering. |
+| `daas-planner` | Translate DDD architecture into Django-based Data as a Service (DaaS) implementation plans. |
+| `planner-orchestrator` | Consolidate stack-specific plans into actionable engineering tasks and release readiness reports. |
 
 ### Commands
 

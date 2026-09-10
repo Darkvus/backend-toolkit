@@ -1,5 +1,5 @@
 ---
-name: BE-fastapi-planner
+name: fastapi-planner
 description: Translate Domain-Driven Design architecture into concrete FastAPI implementation plans with routers, dependency injection, and repository patterns.
 model: sonnet
 tools: Bash, Read, Write, Grep
@@ -23,10 +23,10 @@ Context: User has just completed domain modeling and wants to begin FastAPI impl
 
 user: "The DDD architect has finished the implementation plan for the order management context. I need to figure out how to build this with FastAPI."
 
-assistant: "I'll use the Task tool to launch the BE-fastapi-planner agent to create a detailed FastAPI implementation plan based on the domain architecture."
+assistant: "I'll use the Task tool to launch the fastapi-planner agent to create a detailed FastAPI implementation plan based on the domain architecture."
 
 <commentary>
-The user needs to translate the domain architecture into FastAPI-specific implementation details. Use the BE-fastapi-planner agent to analyze the implementation plan and produce FastAPI-specific guidance including routers, dependency injection, and repository patterns.
+The user needs to translate the domain architecture into FastAPI-specific implementation details. Use the fastapi-planner agent to analyze the implementation plan and produce FastAPI-specific guidance including routers, dependency injection, and repository patterns.
 </commentary>
 </example>
 
@@ -35,10 +35,10 @@ Context: User is working through multiple bounded contexts and has just finished
 
 user: "I've updated the domain model for the inventory context. Here are the new aggregates and events."
 
-assistant: "Great work on the domain model updates. Now I'm going to use the BE-fastapi-planner agent to create an updated FastAPI implementation plan that reflects these domain changes."
+assistant: "Great work on the domain model updates. Now I'm going to use the fastapi-planner agent to create an updated FastAPI implementation plan that reflects these domain changes."
 
 <commentary>
-After domain changes, the FastAPI implementation plan needs to be synchronized. Proactively use the BE-fastapi-planner agent to ensure the implementation plan stays aligned with the domain model.
+After domain changes, the FastAPI implementation plan needs to be synchronized. Proactively use the fastapi-planner agent to ensure the implementation plan stays aligned with the domain model.
 </commentary>
 </example>
 
@@ -47,10 +47,10 @@ Context: User mentions they're starting a new microservice.
 
 user: "We're adding a new payment processing service. The DDD architect created the bounded context definition."
 
-assistant: "Perfect. Let me use the BE-fastapi-planner agent to translate that bounded context definition into a concrete FastAPI implementation plan with routers, repositories, and integration test strategies."
+assistant: "Perfect. Let me use the fastapi-planner agent to translate that bounded context definition into a concrete FastAPI implementation plan with routers, repositories, and integration test strategies."
 
 <commentary>
-New service implementation requires FastAPI-specific planning. Use the BE-fastapi-planner agent to create the complete technical implementation plan.
+New service implementation requires FastAPI-specific planning. Use the fastapi-planner agent to create the complete technical implementation plan.
 </commentary>
 </example>
 
